@@ -5,6 +5,10 @@ import { generate, preview, editandmint } from '../assets';
 import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
+
+
+
+
 const CreatePost = () => {
   const navigate = useNavigate();
 
@@ -21,7 +25,7 @@ const CreatePost = () => {
     if(form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/dalle', {
+        const response = await fetch('http://localhost:8080/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -192,9 +196,10 @@ const CreatePost = () => {
     overflow: 'hidden'
   }}
 >
-  <a href='https://my.spline.design/clonercitycopy-80261a111f966117c979fe9d262ca0f0/' frameborder='0' width='100%' height='100%' target="_blank" rel="noreferrer">
-    <span>Edit & Mint NFT</span>
-  </a>
+<a href="https://my.spline.design/clonercitycopy-80261a111f966117c979fe9d262ca0f0/" target="_blank" rel="noreferrer">
+  <span>Edit &amp; Mint NFT</span>
+</a>
+
   <span
     style={{
       

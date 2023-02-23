@@ -6,7 +6,8 @@ import { edit } from '../assets';
 
 const Card = ({ _id, name, prompt, photo }) => {
   const handleEdit = () => {
-    window.open(`https://my.spline.design/clonercitycopy-80261a111f966117c979fe9d262ca0f0/`, '_blank');
+    window.open('https://my.spline.design/clonercitycopy-80261a111f966117c979fe9d262ca0f0/', '_blank');
+    
   };
 
   return (
